@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D0B7C37-DBD3-4EF1-8CC5-C6364BF6FD62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CinemaAutomation</RootNamespace>
+    <AssemblyName>Sinema Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>unnamed %282%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biletsatisekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletsatisekrani.Designer.cs">
+      <DependentUpon>biletsatisekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici Paneli\FilmEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici Paneli\FilmEklemeSayfasi.Designer.cs">
+      <DependentUpon>FilmEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film\father.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film\father.Designer.cs">
+      <DependentUpon>father.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filmler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filmler.Designer.cs">
+      <DependentUpon>Filmler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film\justice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film\justice.Designer.cs">
+      <DependentUpon>justice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film\nomad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film\nomad.Designer.cs">
+      <DependentUpon>nomad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Film\tenet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film\tenet.Designer.cs">
+      <DependentUpon>tenet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film\wonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film\wonder.Designer.cs">
+      <DependentUpon>wonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SalonEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SalonEkle.Designer.cs">
+      <DependentUpon>SalonEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SatisListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SatisListesi.Designer.cs">
+      <DependentUpon>SatisListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SeansEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SeansEkleme.Designer.cs">
+      <DependentUpon>SeansEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SeansListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici Paneli\SeansListele.Designer.cs">
+      <DependentUpon>SeansListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sinema_BiletiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sinema_BiletiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YakindaVizyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YakindaVizyon.Designer.cs">
+      <DependentUpon>YakindaVizyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiGirisEkrani.Designer.cs">
+      <DependentUpon>YoneticiGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiPaneli.Designer.cs">
+      <DependentUpon>YoneticiPaneli.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletsatisekrani.resx">
+      <DependentUpon>biletsatisekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici Paneli\FilmEklemeSayfasi.resx">
+      <DependentUpon>FilmEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film\father.resx">
+      <DependentUpon>father.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filmler.resx">
+      <DependentUpon>Filmler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film\justice.resx">
+      <DependentUpon>justice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film\nomad.resx">
+      <DependentUpon>nomad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Film\tenet.resx">
+      <DependentUpon>tenet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film\wonder.resx">
+      <DependentUpon>wonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici Paneli\SalonEkle.resx">
+      <DependentUpon>SalonEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici Paneli\SatisListesi.resx">
+      <DependentUpon>SatisListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici Paneli\SeansEkleme.resx">
+      <DependentUpon>SeansEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici Paneli\SeansListele.resx">
+      <DependentUpon>SeansListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YakindaVizyon.resx">
+      <DependentUpon>YakindaVizyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiGirisEkrani.resx">
+      <DependentUpon>YoneticiGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiPaneli.resx">
+      <DependentUpon>YoneticiPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sinema_BiletiDataSet.xsc">
+      <DependentUpon>Sinema_BiletiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Sinema_BiletiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sinema_BiletiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sinema_BiletiDataSet.xss">
+      <DependentUpon>Sinema_BiletiDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\father_xlg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp8455070-nomadland-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ww1984.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TENET.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JL JACK SNY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imdb-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speyscem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dune.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jamesbondtimetodie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="unnamed %282%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
